@@ -1,0 +1,8 @@
+.card-img-top {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the area without distortion */
+    border-top-left-radius: calc(var(--bs-card-border-radius) - var(--bs-card-border-width)); /* Optional: add rounded corners */
+    border-top-right-radius: calc(var(--bs-card-border-radius) - var(--bs-card-border-width)); /* Optional: add rounded corners */
+  }
+  
