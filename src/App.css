@@ -1,8 +1,33 @@
-.card-img-top {
-    width: 100%; /* Full width of the card */
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover; /* Cover the area without distortion */
-    border-top-left-radius: calc(var(--bs-card-border-radius) - var(--bs-card-border-width)); /* Optional: add rounded corners */
-    border-top-right-radius: calc(var(--bs-card-border-radius) - var(--bs-card-border-width)); /* Optional: add rounded corners */
-  }
-  
+.image-container {
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide overflow */
+}
+
+.img-wrapper {
+  display: flex; /* Center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Fill the height of the container */
+}
+
+.img-fluid {
+  max-height: 100%; /* Ensure the image does not exceed the container */
+  object-fit: cover; /* Crop the image to fit the container */
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Scale image to 110% on hover */
+}
+
+.card {
+  border: none; /* Sin borde */
+  border-radius: 12px; /* Bordes redondeados */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.847); /* Sombra al pasar el ratón */
+}
